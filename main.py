@@ -95,10 +95,49 @@ while num >= resultado + suma:
 ## EJERCICIO MOSTRAR PALABRAS AL REVÉS
 print((input("Introduce tu frase: ")[::-1]))
 """
+"""
 ## EJERCICIO PARA AÑADIR VALORES A UNA LISTA
 print("Si el usuario introduce un 0 la lista se mostrará")
 lista = []
 lista.append(str(input("Introduce valores que quieras añadir a la lista: ")))
 print(lista)
+"""
+"""
+## EJERCICIO NOMBRE Y APELLIDOS
+name = str(input("Introduce tu nombre: "))
+firstname = str(input("Introduce el primer apellido: "))
+lastname = str(input("Introduce el segundo apellido: "))
+print(firstname[:2] + lastname[:2] + name[:2])
+"""
+"""
+## EJERCICIO LISTA CON INFO
+lista1 = []
+lista2 = []
+lista3 = []
+lista4 = []
+users = int(input("Introduce cuantos registros quieres introducir: "))
+while users < 0:
+    users = int(input("Introduce cuantos registros quieres introducir: "))
+
+for x in range(users):
+    name = input("Introduce el nombre: ")
+    firstname = input("Introduce el primer apellido: ")
+    lastname = input("Introduce el segundo apellido: ")
+    lista1.append(firstname[:2] + lastname[:2] + name[:2])
+    telephone = input("Introduce el número de teléfono: ")
+    lista2.append(telephone)
+    age = int(input("Introduce la edad: "))
+    while age < 0:
+        age = int(input("Introduce la edad: "))
+    lista3.append(age)
+    contact = int(input("Introduce si ha tenido contacto (1) o no (0): "))
+    lista4.append(contact)
+print("Codi     Telèfon     Edat   Contacte ")
+for x in range(users):
+    print(lista1[x], end="   ")
+    print(lista2[x], end="   ")
+    print(lista3[x], end="     ")
+    print(lista4[x])
+"""
 if __name__ == '__main__':
     main()
