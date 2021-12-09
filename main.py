@@ -139,5 +139,46 @@ for x in range(users):
     print(lista3[x], end="     ")
     print(lista4[x])
 """
+"""
+## INTERVALO DE NÚMEROS
+print("Introduce dos números siendo n1 < n2")
+n1 = int(input("Introduce un número para n1: "))
+n2 = int(input("Introduce un número para n2: "))
+count = 0
+if n2 < n1:
+    print("Ha habido un error ya que n2 es más pequeño que n1")
+else:
+    for count in range(n1 - 1, n2):
+        count += 1
+        print(count)
+"""
+"""
+## NOTAS Y MEDIAS
+approved, failed = 0, 0
+resultA, resultF = 0, 0
+mediaA, mediaF = 0, 0
+num = int(input("Introduce cuantas notas vas a introducir: "))
+while num < 0:
+    num = int(input("Introduce cuantas notas vas a introducir: "))
+for x in range(num):
+    notes = int(input("Introduce la nota del alumno: "))
+    while notes < 0:
+        notes = int(input("La nota que has introducido es menor que 0, introduce otra diferente: "))
+    while notes > 10:
+        notes = int(input("La nota que has introducido es mayor que 10, introduce otra diferente: "))
+    if notes < 5:
+        failed += 1
+        resultF += notes
+    else:
+        approved += 1
+        resultA += notes
+mediaF = resultF // failed
+mediaA = resultA // approved
+print("Cantidad de Aprobados: ", approved)
+print("Media de los Aprobados: ", mediaA)
+print("Cantidad de Suspensos: ", failed)
+print("Media de los Suspensos: ", mediaF)
+"""
+
 if __name__ == '__main__':
     main()
