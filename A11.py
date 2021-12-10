@@ -1,12 +1,12 @@
 def main():
-
+    """
     ## EJERCICIO 1
     numerosPares = []
     for x in range(0, 31):
         if x % 2 == 0:
             numerosPares.append(x)
     print(numerosPares)
-
+    """
     """
     ## EJERCICIO 2
     numeros8 = []
