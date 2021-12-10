@@ -23,7 +23,7 @@ def main():
             numeros6.append(x)
     print(numeros6)
     """
-    
+    """
     ## EJERCICIO 4
     count = 0
     state = "Practica els problemes de list comprehensions per a ser més Pythonic!"
@@ -31,6 +31,12 @@ def main():
         if state[i] == " ":
             count += 1
     print("La frase tiene", count, "espacios")
-    
+    """
+
+    ## EJERCICIO 5
+    state = "Practica els problemes de list comprehensions per a ser més Pythonic!"
+    count = [i for i in state if i not in 'éaeiou ']
+    print(count)
+
 if __name__ == '__main__':
         main()
