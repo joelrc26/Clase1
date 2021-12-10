@@ -18,11 +18,19 @@ def main():
     """
     ## EJERCICIO 3
     numeros6 = []
-    num = 1000
-    for x in range(0, num + 1):
-        if x == 6:
+    for x in range(0, 1001):
+        if '6' in str(x):
             numeros6.append(x)
     print(numeros6)
     """
+    
+    ## EJERCICIO 4
+    count = 0
+    state = "Practica els problemes de list comprehensions per a ser més Pythonic!"
+    for i in range(len(state)):
+        if state[i] == " ":
+            count += 1
+    print("La frase tiene", count, "espacios")
+    
 if __name__ == '__main__':
         main()
