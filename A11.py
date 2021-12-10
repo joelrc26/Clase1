@@ -32,11 +32,17 @@ def main():
             count += 1
     print("La frase tiene", count, "espacios")
     """
-
+    """
     ## EJERCICIO 5
     state = "Practica els problemes de list comprehensions per a ser més Pythonic!"
     count = [i for i in state if i not in 'éaeiou ']
     print(count)
-
+    """
+    """
+    ## EJERCICIO 6
+    state = "Practica els problemes de list comprehensions per a ser més Pythonic!"
+    count = [i for i in state.split() if len(i) < 5]
+    print(count)
+    """
 if __name__ == '__main__':
         main()
