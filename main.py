@@ -197,5 +197,10 @@ print()
 for i in range(registres):
     print(regs['username'][i] + '\t\t|' + regs['department'][i] + '\t\t|' + str(regs['classroom'][i]) + '\t\t |')
 """
+letra = str(input("Introduce una letra: "))
+arrayNotes = 'a', 'z', 'g', 'd', 'w', 'o', 'h', 'e', 'x', 's'
+for i in arrayNotes:
+    if i == letra:
+        print("La letra introducida", [letra], "está en el array")
 if __name__ == '__main__':
     main()
