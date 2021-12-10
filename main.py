@@ -175,6 +175,27 @@ print("Media de los Aprobados: ", mediaA)
 print("Cantidad de Suspensos: ", failed)
 print("Media de los Suspensos: ", mediaF)
 """
-
+"""
+## ESTRUCTURA GESTIÓN USUARIOS
+header = ['Username', 'Department', 'Classroom']
+username = list()
+dept = list()
+classroom = list()
+registres = int(input("Introduce los registros que quieras añadir: "))
+for i in range(registres):
+    username.append(input("Introduce el nombre de usuario "))
+    dept.append(input("Introduce el departamento: "))
+    classroom.append(int(input("Introduce la clase: ")))
+regs = {
+    "username": username,
+    "dept": dept,
+    "classroom": classroom
+}
+for i in header:
+    print(i, end="\t|")
+print()
+for i in range(registres):
+    print(regs['username'][i] + '\t\t|' + regs['department'][i] + '\t\t|' + str(regs['classroom'][i]) + '\t\t |')
+"""
 if __name__ == '__main__':
     main()
