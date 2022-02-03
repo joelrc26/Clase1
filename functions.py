@@ -1,4 +1,4 @@
-
+# EJERCICIO 1
 def validate():
     count = 0
     num = int(input("Introdueix un nombre que estigui entre el 10 i el 5000: "))
