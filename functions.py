@@ -9,7 +9,6 @@ def validate():
         return -1
     else:
         return num
-
 def main():
     num1 = validate()
     while num1 == -1:
