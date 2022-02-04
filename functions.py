@@ -27,9 +27,13 @@ def validate():
 
 def main():
     seconds = validate()
-    hours = seconds / 3600
-    minutes = seconds / 60
-    seconds = seconds / 60
+    hours = seconds // 3600
+    minutes = seconds // 60
+    if minutes == 60:
+        minutes = 0
+        seconds = seconds // 60
+    if seconds == 60:
+        seconds = 0
     print("Equivalen a ", hours, "horas, ", minutes, "minutos y ", seconds, "segundos")
 if __name__ == '__main__':
     main()
