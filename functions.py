@@ -17,7 +17,7 @@ def main():
         num1 = validate()
     print("Has introducido el ", num1)
 """
-
+"""
 # EJERCICIO 2
 def validate():
     num = int(input("Escribe el número total de segundos: "))
@@ -35,6 +35,25 @@ def main():
     if seconds == 60:
         seconds = 0
     print("Equivalen a ", hours, "horas, ", minutes, "minutos y ", seconds, "segundos")
+"""
+
+# EJERCICIO 3
+def validate():
+    num = int(input("Introdueix un nombre enter: "))
+    while num < 0:
+        num = int(input("Introdueix un nombre enter: "))
+    return num
+
+def main():
+    count = 1
+    rem = binary = 0
+    num1 = validate()
+    while num1 != 0:
+        rem = num1 % 2
+        num1 = num1 // 2
+        binary = binary + (rem * count)
+        count = count * 10
+    print("La conversio a binari és: ", binary)
 
 if __name__ == '__main__':
     main()
