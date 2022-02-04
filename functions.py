@@ -35,5 +35,6 @@ def main():
     if seconds == 60:
         seconds = 0
     print("Equivalen a ", hours, "horas, ", minutes, "minutos y ", seconds, "segundos")
+
 if __name__ == '__main__':
     main()
