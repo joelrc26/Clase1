@@ -55,7 +55,7 @@ def main():
         count = count * 10
     print("La conversio a binari és: ", binary)
 """
-
+"""
 # EJERCICIO 4
 def validate():
     num = int(input("Introduce una nota: "))
@@ -83,6 +83,19 @@ def main():
     print("La cantidad de suspensos son: ", failed)
     print("La nota media de los que han aprobado es un: ", mediaA)
     print("La nota media de los que han suspendido es un: ", mediaF)
+"""
 
+# EJERCICIO 5
+def validate():
+    num = int(input("Introduce un numero el cual después su valor será intercambiado: "))
+    while num < 0:
+        num = int(input("Introduce un numero el cual después su valor será intercambiado: "))
+    return num
+def main():
+    num1 = validate()
+    num2= validate()
+    print("Valores antes de intercambiarse: ", num1, num2)
+    num1, num2 = num2, num1
+    print("Valores intercambiados: ",num1, num2)
 if __name__ == '__main__':
     main()
