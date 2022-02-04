@@ -36,7 +36,7 @@ def main():
         seconds = 0
     print("Equivalen a ", hours, "horas, ", minutes, "minutos y ", seconds, "segundos")
 """
-
+"""
 # EJERCICIO 3
 def validate():
     num = int(input("Introdueix un nombre enter: "))
@@ -54,6 +54,35 @@ def main():
         binary = binary + (rem * count)
         count = count * 10
     print("La conversio a binari és: ", binary)
+"""
+
+# EJERCICIO 4
+def validate():
+    num = int(input("Introduce una nota: "))
+    while num < 0 or num > 10:
+        num = int(input("Introduce una nota: "))
+    return num
+
+def main():
+    count = approved = failed = 0
+    mediaA = mediaF = resultA = resultF = 0
+    print("********* INTRODUCE 15 NOTAS *********\n")
+    while count < 15:
+        nota = validate()
+        if nota >= 5:
+            approved += 1
+            resultA += nota
+        else:
+            failed += 1
+            resultF += nota
+        count = count + 1
+        print("Llevas puestas", count, "notas de 15")
+    mediaA = resultA / approved
+    mediaF = resultF / failed
+    print("La cantidad de aprobados son: ", approved)
+    print("La cantidad de suspensos son: ", failed)
+    print("La nota media de los que han aprobado es un: ", mediaA)
+    print("La nota media de los que han suspendido es un: ", mediaF)
 
 if __name__ == '__main__':
     main()
