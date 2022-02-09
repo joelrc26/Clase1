@@ -84,7 +84,7 @@ def main():
     print("La nota media de los que han aprobado es un: ", mediaA)
     print("La nota media de los que han suspendido es un: ", mediaF)
 """
-
+"""
 # EJERCICIO 5
 def validate():
     num = int(input("Introduce un numero el cual después su valor será intercambiado: "))
@@ -97,5 +97,28 @@ def main():
     print("Valores antes de intercambiarse: ", num1, num2)
     num1, num2 = num2, num1
     print("Valores intercambiados: ",num1, num2)
+"""
+
+# EJERCICIO 6
+def validate():
+    num = int(input("Introduce un número mayor que 0: "))
+    while num < 0:
+        num = int(input("Introduce un número mayor que 0: "))
+    return num
+
+def comprobar(num):
+    sum = count = 0
+    while sum <= num:
+        sum = sum + count
+        if sum <= num:
+            print(count)
+            count = count + 1
+    print("El resultado de la suma es:")
+    return sum - count
+
+def main():
+    num = validate()
+    print(comprobar(num))
+
 if __name__ == '__main__':
     main()
