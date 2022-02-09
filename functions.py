@@ -124,7 +124,7 @@ def main():
 # EJERCICIO 7
 
 """
-
+"""
 # EJERCICIO 8
 def validateE():
     exp = int(input("Introduce un número de exponente: "))
@@ -146,6 +146,10 @@ def main():
         result = result * base
         count = count + 1
     print("El resultado de la operación es igual a:", result)
+"""
+
+# EJERCICIO 9
+
 
 if __name__ == '__main__':
     main()
