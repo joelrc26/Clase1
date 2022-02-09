@@ -93,7 +93,7 @@ def validate():
     return num
 def main():
     num1 = validate()
-    num2= validate()
+    num2 = validate()
     print("Valores antes de intercambiarse: ", num1, num2)
     num1, num2 = num2, num1
     print("Valores intercambiados: ",num1, num2)
@@ -124,6 +124,28 @@ def main():
 # EJERCICIO 7
 
 """
+
+# EJERCICIO 8
+def validateE():
+    exp = int(input("Introduce un número de exponente: "))
+    while exp < 0:
+        exp = int(input("Introduce un número de exponente: "))
+    return exp
+
+def validate():
+    base = int(input("Introduce un número de base: "))
+    while base < 0:
+        base = int(input("Introduce un número de base: "))
+    return base
+
+def main():
+    result = count = 1
+    base = validate()
+    exp = validateE()
+    while (count <= exp):
+        result = result * base
+        count = count + 1
+    print("El resultado de la operación es igual a:", result)
 
 if __name__ == '__main__':
     main()
