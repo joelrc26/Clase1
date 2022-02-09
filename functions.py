@@ -98,7 +98,7 @@ def main():
     num1, num2 = num2, num1
     print("Valores intercambiados: ",num1, num2)
 """
-
+"""
 # EJERCICIO 6
 def validate():
     num = int(input("Introduce un número mayor que 0: "))
@@ -119,6 +119,11 @@ def comprobar(num):
 def main():
     num = validate()
     print(comprobar(num))
+"""
+"""
+# EJERCICIO 7
+
+"""
 
 if __name__ == '__main__':
     main()
