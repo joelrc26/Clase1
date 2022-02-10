@@ -120,10 +120,51 @@ def main():
     num = validate()
     print(comprobar(num))
 """
-"""
-# EJERCICIO 7
 
-"""
+# EJERCICIO 7
+def sais():
+    size = int(input("Introduce un tamaño: "))
+    while size < 1 or size > 50:
+        size = int(input("Introduce un tamaño: "))
+    return size
+
+def nums(size):
+    ls_nums = list()
+    for x in range(size):
+        num = float(input("Introduce un numero: "))
+        while num < 0 or num > 10:
+            num = float(input("Introduce un numero: "))
+        ls_nums.append(num)
+
+def avg(ls_nums):
+    total = avg = 0.0
+    for x in ls_nums:
+        total = x + total
+    avg = total // len(ls_nums)
+    print("La media es: ", avg)
+
+def max(ls_nums):
+    aux = 0
+    for x in ls_nums:
+        if x > aux:
+            aux = x
+    print("El maximo es: ", aux)
+    return aux
+
+def min(ls_nums):
+    min = ls_nums[0]
+    for x in ls_nums:
+        if x <= min:
+            min = x
+    print("El minimo es: ", min)
+
+def main():
+    size = sais()
+    ls_nums = nums(size)
+    avg(ls_nums)
+    max = max(ls_nums)
+    min = min(ls_nums)
+
 """
 # EJERCICIO 8
 def validateE():
@@ -151,7 +192,7 @@ def main():
 # EJERCICIO 9
 
 """
-
+"""
 # EJERCICIO 10
 def validate():
     num = int(input("Introduce el numero de libros que vas a introducir: "))
@@ -179,6 +220,7 @@ def main():
         for x in DatosLibro:
             print(x, DatosLibro[x])
         count = count + 1
+"""
 
 if __name__ == '__main__':
     main()
