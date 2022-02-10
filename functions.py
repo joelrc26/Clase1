@@ -147,9 +147,38 @@ def main():
         count = count + 1
     print("El resultado de la operación es igual a:", result)
 """
-
+"""
 # EJERCICIO 9
 
+"""
+
+# EJERCICIO 10
+def validate():
+    num = int(input("Introduce el numero de libros que vas a introducir: "))
+    while num < 1:
+        num = int(input("Introduce el numero de libros que vas a introducir: "))
+    return num
+
+def main():
+    count = 1
+    num = validate()
+    for x in range(num):
+        print("\n------------------------------ INTRODUCE LOS DATOS DEL LIBRO", count, "------------------------------")
+        DatosLibro = {'Titulo del libro: ': input("Introduce el titulo del libro: "),
+                      'Autor del libro: ': input("Introduce el autor del libro: "),
+                      'Editorial del libro: ': input("Introduce la editorial del libro: "),
+                      'Dia de publicación: ': int(input("Introduce el dia de publicación: ")),
+                      'Mes de publicación: ': int(input("Introduce el mes de publicación: ")),
+                      'Año de publicación: ': int(input("Introduce el año de publicación: ")),
+                      'Número de unidades disponibles: ': int(input("Introduce el número de unidades disponibles: ")),
+                      'Usuario que tiene el préstamo del libro: ': input(
+                          "Introduce el usuario que tiene el préstamo del libro: "),
+                      'Tiempo de préstamo en dias: ' : int(input("Introduce el tiempo de préstamo en dias: "))
+                      }
+        print("\n---------------------------------- DATOS DEL LIBRO", count, "----------------------------------")
+        for x in DatosLibro:
+            print(x, DatosLibro[x])
+        count = count + 1
 
 if __name__ == '__main__':
     main()
