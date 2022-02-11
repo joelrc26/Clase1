@@ -120,7 +120,7 @@ def main():
     num = validate()
     print(comprobar(num))
 """
-
+"""
 # EJERCICIO 7
 def sais():
     size = int(input("Introduce un tamaño: "))
@@ -164,7 +164,7 @@ def main():
     avg(ls_nums)
     max = max(ls_nums)
     min = min(ls_nums)
-
+"""
 """
 # EJERCICIO 8
 def validateE():
@@ -221,6 +221,32 @@ def main():
             print(x, DatosLibro[x])
         count = count + 1
 """
+
+# EJERCICIO 15
+def main():
+    maquina = rapido = blanca = 1
+    delicada = lana = 1
+    if maquina == 1:
+        if delicada == 1 and rapido == 1:
+            if lana == 1:
+                revoluciones = 400
+            else:
+                revoluciones = 600
+        else:
+            if blanca == 1:
+                revoluciones = 1200
+            else:
+                revoluciones = 1000
+        if revoluciones < 600:
+            tiempo = 45
+        else:
+            if revoluciones < 1000:
+                tiempo = 60
+            else:
+                tiempo = 90
+        print("El tiempo de lavado es:", tiempo, "\nLas revoluciones son:", revoluciones)
+    else:
+        print("Mira las indicaciones de la etiqueta")
 
 if __name__ == '__main__':
     main()
