@@ -120,7 +120,7 @@ def main():
     num = validate()
     print(comprobar(num))
 """
-"""
+
 # EJERCICIO 7
 def sais():
     size = int(input("Introduce un tamaño: "))
@@ -158,13 +158,23 @@ def min(ls_nums):
             min = x
     print("El minimo es: ", min)
 
+def orden_asc(ls_nums):
+    for i in range(len(ls_nums)):
+        for j in range(len(ls_nums)):
+            if ls_nums[i] > ls_nums[j]:
+                cambio = ls_nums[i]
+                ls_nums[i] = ls_nums[j]
+                ls_nums[j] = cambio
+    for i in ls_nums:
+        print(i)
+
 def main():
     size = sais()
     ls_nums = nums(size)
     avg(ls_nums)
     max = max(ls_nums)
     min = min(ls_nums)
-"""
+
 """
 # EJERCICIO 8
 def validateE():
@@ -222,31 +232,6 @@ def main():
         count = count + 1
 """
 
-# EJERCICIO 15
-def main():
-    maquina = rapido = blanca = 1
-    delicada = lana = 1
-    if maquina == 1:
-        if delicada == 1 and rapido == 1:
-            if lana == 1:
-                revoluciones = 400
-            else:
-                revoluciones = 600
-        else:
-            if blanca == 1:
-                revoluciones = 1200
-            else:
-                revoluciones = 1000
-        if revoluciones < 600:
-            tiempo = 45
-        else:
-            if revoluciones < 1000:
-                tiempo = 60
-            else:
-                tiempo = 90
-        print("El tiempo de lavado es:", tiempo, "\nLas revoluciones son:", revoluciones)
-    else:
-        print("Mira las indicaciones de la etiqueta")
 
 if __name__ == '__main__':
     main()
