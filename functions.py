@@ -198,7 +198,7 @@ def main():
         count = count + 1
     print("El resultado de la operación es igual a:", result)
 """
-
+"""
 # EJERCICIO 9
 def convert():
     decimal = 0
@@ -209,8 +209,7 @@ def convert():
 
 def main():
     convert()
-
-
+"""
 """
 # EJERCICIO 10
 def validate():
@@ -241,7 +240,7 @@ def main():
         count = count + 1
 """
 """
-#EJERCICIO 11
+# EJERCICIO 11
 import random
 def main():
     count = 0
@@ -255,6 +254,29 @@ def main():
             count = count
     print(numerosPares)
 """
+
+# EJERCICIO 12
+def validate():
+    num = int(input("Introduce la dimensión del array: "))
+    while num < 1 or num > 50:
+        num = int(input("Introduce la dimensión del array: "))
+    return num
+
+def desc_order(array):
+    for i in range(len(array)):
+        for j in range(len(array)):
+            if array[i] > array[j]:
+                array[i], array[j] = array[j], array[i]
+
+def main():
+    array = []
+    dim = validate()
+    for x in range(dim):
+        x = int(input("Introduce un número: "))
+        array.append(x)
+    desc_order(array)
+    print(array)
+
 """
 # EJERCICIO 15
 def main():
