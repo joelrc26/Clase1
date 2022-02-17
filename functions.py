@@ -239,22 +239,18 @@ def main():
             print(x, DatosLibro[x])
         count = count + 1
 """
-"""
-# EJERCICIO 11
-import random
-def main():
-    count = 0
-    numerosPares = []
-    while count < 10:
-        num = int(input("Introduce un numero: "))
-        if num % 2 == 0 and num != 0:
-            numerosPares.append(num)
-            count = count + 1
-        else:
-            count = count
-    print(numerosPares)
-"""
 
+# EJERCICIO 11
+def parells():
+    lista = []
+    for x in range(2, 102, 2):
+        lista.append(x)
+    return lista
+
+def main():
+    print(parells())
+
+"""
 # EJERCICIO 12
 def validate():
     num = int(input("Introduce la dimensión del array: "))
@@ -276,7 +272,15 @@ def main():
         array.append(x)
     desc_order(array)
     print(array)
+"""
+"""
+# EJERCICIO 13
 
+"""
+"""
+# EJERCICIO 14
+
+"""
 """
 # EJERCICIO 15
 def main():
